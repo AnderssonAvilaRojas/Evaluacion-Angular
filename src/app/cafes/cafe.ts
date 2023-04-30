@@ -1,9 +1,9 @@
 //import { Editorial } from "../editorial/editorial";
 
 
-export class Cafes {
+export class Cafe {
  id: number;
- name: string;
+ nombre: string;
  tipo: string;
  religion: string;
  sabor: string;
@@ -12,7 +12,7 @@ export class Cafes {
 
  constructor(
    id: number,
-   name: string,
+   nombre: string,
    tipo: string,
    religion: string,
    sabor: string,
@@ -21,7 +21,7 @@ export class Cafes {
 
  ) {
    this.id = id;
-   this.name = name;
+   this.nombre = nombre;
   this.tipo= tipo;
   this.religion=religion;
   this.sabor=sabor;
