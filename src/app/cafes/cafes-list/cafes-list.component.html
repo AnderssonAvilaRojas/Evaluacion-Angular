@@ -1,18 +1,36 @@
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let cafe of cafeslist">
-          <div class="card p-2" style="width: 15rem; height: 33rem">
-              <img
-                class="card-img-top"
-                src="{{ cafe.imagen }}"
-                alt="{{ cafe.nombre }}"
-              />
-              <div class="card-body">
-                <h5 class="card-title">{{ cafe.nombre }}</h5>
+<!-- <h1 style = "font-family:courier,arial,helvética;">El aroma mágico</h1> -->
 
-              </div>
-           </div>
-      </div>
-   </div>
+
+<img src="banner.jpg" style="width: 100%;"/>
+<div class="card" style="width: 80%;">
+
+   <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+
+          <tr *ngFor="let cafe of cafeslist">
+          <th scope="row">{{cafe.id}}</th>
+          <td>{{ cafe.nombre }}</td>
+          <td>{{ cafe.tipo }}</td>
+          <td>{{ cafe.region}}</td>
+        </tr>
+
+    </tbody>
+  </table>
+
+  <div *ngFor="let cafe of cafeslist">
+
+  </div>
+<p>Totol cafe de origen:{{totalBriend}}</p>
+  <p>Totol cafe briend:{{totalOrigen}}</p>
 </div>
